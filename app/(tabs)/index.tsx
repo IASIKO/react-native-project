@@ -4,7 +4,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 export default function HomeScreen() {
   return (
     <ThemedView style={styles.body}>
-      <Image source={require("@/assets/images/spy.svg")} style={styles.spy} />
+      <Image source={require("@/assets/images/spy.png")} style={styles.spyImage} />
       <View style={styles.spyTextContainer}>
         <Text style={styles.spyTitle}>Let's play spy</Text>
         <Text style={styles.spyDesc}>swipe left to find out what to do</Text>
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 14,
   },
-  spy: {
+  spyImage: {
     height: 200,
     width: 200,
   },
